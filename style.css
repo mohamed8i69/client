@@ -11,16 +11,16 @@
       --black: #111111;
       --soft-black: #1C1C1C;
       --white: #FFFFFF;
-      --warm-white: #F8F6F2;
-      --gold: #B8953D;
-      --gold-hover: #A78633;
-      --beige: #E9E2D8;
-      --gray: #5F5F5F;
-      --gray2: #8A8A8A;
-      --border: #E7E2D9;
-      --card-bg: #F1ECE4;
-      --success: #5E7A64;
-      --error: #B85C5C;
+      --warm-white: #F6F9FF;
+      --gold: #3B82F6;
+      --gold-hover: #2563EB;
+      --beige: #E8EEF9;
+      --gray: #4B5563;
+      --gray2: #6B7280;
+      --border: #D9E2F1;
+      --card-bg: #EEF4FF;
+      --success: #0F766E;
+      --error: #B91C1C;
       --r12: 12px;
       --r18: 18px;
       --r24: 24px;
@@ -994,6 +994,7 @@
       padding: 48px 60px;
     }
 
+
     .prod-gallery-main {
       height: 520px;
       border-radius: 24px;
@@ -1766,6 +1767,19 @@
         min-height: auto;
       }
 
+      .hero-content,
+      .section-head-left {
+        max-width: 100%;
+      }
+
+      .hero-image-wrap {
+        height: 320px;
+      }
+
+      .hero-image {
+        border-radius: 18px;
+      }
+
       .section-title,
       .hero-title,
       .about-hero-title {
@@ -1782,6 +1796,7 @@
       .hero-card {
         position: static;
         width: 100%;
+        margin-top: 12px;
       }
 
       .cat-grid,
@@ -1798,12 +1813,89 @@
       .shop-layout,
       .faq-layout,
       .contact-layout,
-      .policies-layout {
+      .policies-layout,
+      .product-layout {
         grid-template-columns: 1fr;
         gap: 20px;
       }
 
+      .product-layout {
+        padding-top: 24px;
+        padding-bottom: 24px;
+      }
+
+      .prod-gallery-main {
+        height: 300px;
+        font-size: 52px;
+      }
+
+      .prod-thumb {
+        height: 64px;
+        font-size: 20px;
+      }
+
+      .prod-detail-title {
+        font-size: 24px;
+        line-height: 1.35;
+      }
+
+      .prod-detail-price {
+        font-size: 28px;
+      }
+
+      .section-full,
+      .premium-banner,
+      .newsletter,
+      .footer,
+      .page-header,
+      .trust-bar {
+        padding-top: 36px;
+        padding-bottom: 36px;
+      }
+
+      .section-head {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 14px;
+        margin-bottom: 24px;
+      }
+
+      .premium-banner,
+      .newsletter-box,
+      .trust-bar {
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+
+      .premium-title,
+      .page-header h1 {
+        font-size: 30px;
+      }
+
+      .premium-visual,
+      .why-image {
+        height: 240px;
+      }
+
+      .newsletter-box {
+        padding: 24px 16px;
+        border-radius: 18px;
+      }
+
+      .nl-form {
+        flex-direction: column;
+      }
+
+      .nl-input,
+      .nl-form .btn-gold {
+        width: 100%;
+      }
+
       .policy-nav {
+        position: static;
+      }
+
+      .sidebar {
         position: static;
       }
 
@@ -1819,6 +1911,12 @@
       .footer-grid {
         grid-template-columns: 1fr;
         gap: 24px;
+      }
+
+      .footer-bar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
       }
 
       .figma-banner {
@@ -1842,6 +1940,30 @@
         font-size: 24px;
       }
 
+      .page-header h1,
+      .premium-title {
+        font-size: 24px;
+      }
+
+      .prod-gallery-main {
+        height: 240px;
+        font-size: 44px;
+      }
+
+      .prod-detail-title {
+        font-size: 21px;
+      }
+
+      .prod-detail-price {
+        font-size: 24px;
+      }
+
+      .page-header p,
+      .section-subtitle,
+      .hero-subtitle {
+        font-size: 13px;
+      }
+
       .hero-btns {
         flex-direction: column;
       }
@@ -1850,8 +1972,27 @@
         gap: 8px;
       }
 
+      .hero-title,
+      .section-title,
+      .premium-title,
+      .page-header h1,
+      .prod-name,
+      .cat-card-title,
+      .coll-title {
+        overflow-wrap: anywhere;
+      }
+
       .nav-tabs button {
         padding: 10px 14px;
         font-size: 12px;
+      }
+
+      .prod-badge {
+        top: 12px;
+        right: 12px;
+      }
+
+      .section-divider {
+        margin: 0 14px;
       }
     }
